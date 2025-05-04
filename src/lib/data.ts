@@ -735,6 +735,14 @@ export const jobs: Job[] = [
   }
 ];
 
+// Database connection configuration
+export const dbConfig = {
+  host: 'localhost',
+  user: 'root',
+  password: 'Roshan@123',
+  database: 'careerrecommendationdb'
+};
+
 // Get courses by stream
 export const getCoursesByStream = (stream: string): Course[] => {
   switch(stream) {
@@ -755,9 +763,4 @@ export const getCollegesByCourse = (courseId: string): College[] => {
 };
 
 // Get course by ID
-export const getCourseById = (courseId: string): Course | undefined => {
-  return allCourses.find(course => course.id === courseId);
-};
-
-// Get college by ID
-export const getCollegeById = (collegeId: string): College
+export const getCourseById
