@@ -13,13 +13,15 @@ export interface Job {
   posted: string;
   skills: string[];
   description: string;
+  saved?: boolean;
 }
 
 interface JobCardProps {
   job: Job;
+  onSave?: (id: string) => void;
 }
 
-const JobCard: React.FC<JobCardProps> = ({ job }) => {
+const JobCard: React.FC<JobCardProps> = ({ job, onSave }) => {
   return (
     <div className="job-card bg-white rounded-lg shadow border border-gray-100 overflow-hidden">
       <div className="p-6">
