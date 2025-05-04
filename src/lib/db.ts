@@ -66,4 +66,32 @@ export const getCollegesByCourseFromDb = async (courseId: string) => {
   }
 };
 
+// Helper function to get all colleges from the database
+export const getAllCollegesFromDb = async () => {
+  try {
+    const query = `
+      SELECT c.college_id, c.name, c.location, c.avg_salary, c.fees, c.application_deadline, c.course_id,
+             GROUP_CONCAT(cc.company_name) as companies
+      FROM colleges c
+      LEFT JOIN college_companies cc ON c.college_id = cc.college_id
+      GROUP BY c.college_id
+    `;
+    const results = await executeQuery(query);
+    
+    return Array.isArray(results) ? results.map(row => ({
+      id: row.college_id,
+      name: row.name,
+      location: row.location,
+      avgSalary: row.avg_salary,
+      fees: row.fees,
+      companies: row.companies ? row.companies.split(',') : [],
+      applicationDeadline: row.application_deadline,
+      courseId: row.course_id
+    })) : [];
+  } catch (error) {
+    console.error('Error fetching all colleges:', error);
+    return [];
+  }
+};
+
 export default pool;

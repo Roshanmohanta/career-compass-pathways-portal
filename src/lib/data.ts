@@ -1,3 +1,4 @@
+
 import { Course } from '@/components/CourseCard';
 import { College } from '@/components/CollegeCard';
 import { Job } from '@/components/JobCard';
@@ -763,4 +764,33 @@ export const getCollegesByCourse = (courseId: string): College[] => {
 };
 
 // Get course by ID
-export const getCourseById
+export const getCourseById = (courseId: string): Course | undefined => {
+  return allCourses.find(course => course.id === courseId);
+};
+
+// Get college by ID
+export const getCollegeById = (collegeId: string): College | undefined => {
+  return colleges.find(college => college.id === collegeId);
+};
+
+// Get job by ID
+export const getJobById = (jobId: string): Job | undefined => {
+  return jobs.find(job => job.id === jobId);
+};
+
+// Mock admin stats for dashboard
+export const adminStats = {
+  totalCourses: allCourses.length,
+  totalColleges: colleges.length,
+  totalJobs: jobs.length,
+  newApplications: 24,
+  activeUsers: 457,
+  monthlyVisits: 5823,
+  popularCourses: [
+    { name: 'Engineering', students: 1245 },
+    { name: 'Medical Sciences', students: 987 },
+    { name: 'B.Com', students: 876 },
+    { name: 'BBA', students: 764 },
+    { name: 'Psychology', students: 543 }
+  ]
+};
