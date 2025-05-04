@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Courses from "./pages/Courses";
 import CollegeDetails from "./pages/CollegeDetails";
 import Jobs from "./pages/Jobs";
+import JobDetails from "./pages/JobDetails";
 import AdminDashboard from "./pages/Admin/Dashboard";
 import AdminCourses from "./pages/Admin/Courses";
 import AdminColleges from "./pages/Admin/Colleges";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/courses/:id" element={<Courses />} />
           <Route path="/colleges/:id" element={<CollegeDetails />} />
           <Route path="/jobs" element={<Jobs />} />
+          <Route path="/job-details/:id" element={<JobDetails />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/courses" element={<AdminCourses />} />
           <Route path="/admin/colleges" element={<AdminColleges />} />

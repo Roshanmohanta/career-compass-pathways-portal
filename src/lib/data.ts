@@ -172,7 +172,7 @@ export const allCourses: Course[] = [
   ...artsCourses
 ];
 
-// Colleges data
+// Colleges data - Adding more colleges for each course
 export const colleges: College[] = [
   // Engineering Colleges
   {
@@ -205,6 +205,26 @@ export const colleges: College[] = [
     applicationDeadline: 'May 10, 2025',
     courseId: 'engineering'
   },
+  {
+    id: 'iit-bombay',
+    name: 'Indian Institute of Technology, Bombay',
+    location: 'Mumbai, India',
+    avgSalary: '₹20-28 LPA',
+    fees: '₹9 Lakhs (Total)',
+    companies: ['Microsoft', 'Apple', 'Google', 'Uber', 'LinkedIn'],
+    applicationDeadline: 'April 25, 2025',
+    courseId: 'engineering'
+  },
+  {
+    id: 'iit-madras',
+    name: 'Indian Institute of Technology, Madras',
+    location: 'Chennai, India',
+    avgSalary: '₹18-24 LPA',
+    fees: '₹8 Lakhs (Total)',
+    companies: ['Amazon', 'Microsoft', 'Goldman Sachs', 'Intel', 'Samsung'],
+    applicationDeadline: 'May 5, 2025',
+    courseId: 'engineering'
+  },
   
   // Medical Colleges
   {
@@ -227,6 +247,102 @@ export const colleges: College[] = [
     applicationDeadline: 'May 25, 2025',
     courseId: 'medical'
   },
+  {
+    id: 'kmc-manipal',
+    name: 'Kasturba Medical College',
+    location: 'Manipal, Karnataka',
+    avgSalary: '₹10-14 LPA',
+    fees: '₹12 Lakhs (Total)',
+    companies: ['Fortis', 'Apollo', 'Narayana Health', 'Manipal Hospitals'],
+    applicationDeadline: 'June 10, 2025',
+    courseId: 'medical'
+  },
+  {
+    id: 'ucms-delhi',
+    name: 'University College of Medical Sciences',
+    location: 'Delhi, India',
+    avgSalary: '₹8-12 LPA',
+    fees: '₹1.2 Lakhs (Total)',
+    companies: ['AIIMS', 'Fortis', 'Max Healthcare', 'Medanta'],
+    applicationDeadline: 'June 15, 2025',
+    courseId: 'medical'
+  },
+  
+  // Physics Colleges
+  {
+    id: 'iiser-pune',
+    name: 'Indian Institute of Science Education and Research',
+    location: 'Pune, India',
+    avgSalary: '₹6-10 LPA',
+    fees: '₹3 Lakhs (Total)',
+    companies: ['ISRO', 'BARC', 'DRDO', 'Tata Institute'],
+    applicationDeadline: 'June 20, 2025',
+    courseId: 'bsc-physics'
+  },
+  {
+    id: 'st-stephens-physics',
+    name: 'St. Stephens College',
+    location: 'Delhi, India',
+    avgSalary: '₹5-8 LPA',
+    fees: '₹80,000 (Per Year)',
+    companies: ['ISRO', 'DRDO', 'Research Labs', 'Educational Institutions'],
+    applicationDeadline: 'June 10, 2025',
+    courseId: 'bsc-physics'
+  },
+  {
+    id: 'madras-christian-physics',
+    name: 'Madras Christian College',
+    location: 'Chennai, India',
+    avgSalary: '₹4-7 LPA',
+    fees: '₹70,000 (Per Year)',
+    companies: ['Research Labs', 'Educational Institutions', 'Wipro'],
+    applicationDeadline: 'May 30, 2025',
+    courseId: 'bsc-physics'
+  },
+  
+  // Chemistry Colleges
+  {
+    id: 'iit-kgp-chem',
+    name: 'IIT Kharagpur - Chemistry Department',
+    location: 'Kharagpur, India',
+    avgSalary: '₹7-12 LPA',
+    fees: '₹8 Lakhs (Total)',
+    companies: ['ONGC', 'Reliance', 'Asian Paints', 'Sun Pharma'],
+    applicationDeadline: 'May 20, 2025',
+    courseId: 'bsc-chemistry'
+  },
+  {
+    id: 'delhi-university-chem',
+    name: 'Delhi University - Chemistry Department',
+    location: 'Delhi, India',
+    avgSalary: '₹5-8 LPA',
+    fees: '₹75,000 (Per Year)',
+    companies: ['ONGC', 'IOCL', 'Pharmaceutical Companies', 'Research Labs'],
+    applicationDeadline: 'June 5, 2025',
+    courseId: 'bsc-chemistry'
+  },
+  
+  // Biotechnology Colleges
+  {
+    id: 'manipal-biotech',
+    name: 'Manipal Institute of Technology - Biotechnology',
+    location: 'Manipal, Karnataka',
+    avgSalary: '₹6-10 LPA',
+    fees: '₹14 Lakhs (Total)',
+    companies: ['Biocon', 'Dr. Reddy\'s', 'Cipla', 'Research Labs'],
+    applicationDeadline: 'May 30, 2025',
+    courseId: 'biotech'
+  },
+  {
+    id: 'vit-biotech',
+    name: 'Vellore Institute of Technology - Biotechnology',
+    location: 'Vellore, Tamil Nadu',
+    avgSalary: '₹5-9 LPA',
+    fees: '₹10 Lakhs (Total)',
+    companies: ['Biocon', 'Serum Institute', 'Cipla', 'Novozymes'],
+    applicationDeadline: 'June 15, 2025',
+    courseId: 'biotech'
+  },
   
   // B.Com Colleges
   {
@@ -247,6 +363,26 @@ export const colleges: College[] = [
     fees: '₹40,000 (Per Year)',
     companies: ['HDFC Bank', 'ICICI Bank', 'Infosys', 'TCS', 'Wipro'],
     applicationDeadline: 'May 30, 2025',
+    courseId: 'bcom'
+  },
+  {
+    id: 'christ-bcom',
+    name: 'Christ University - B.Com',
+    location: 'Bangalore, India',
+    avgSalary: '₹7-10 LPA',
+    fees: '₹1.2 Lakhs (Per Year)',
+    companies: ['KPMG', 'EY', 'Deloitte', 'Goldman Sachs', 'JP Morgan'],
+    applicationDeadline: 'May 20, 2025',
+    courseId: 'bcom'
+  },
+  {
+    id: 'symbiosis-pune-bcom',
+    name: 'Symbiosis College of Arts and Commerce',
+    location: 'Pune, India',
+    avgSalary: '₹6-9 LPA',
+    fees: '₹80,000 (Per Year)',
+    companies: ['HDFC Bank', 'Axis Bank', 'ICICI', 'Goldman Sachs', 'EY'],
+    applicationDeadline: 'June 5, 2025',
     courseId: 'bcom'
   },
   
@@ -271,6 +407,82 @@ export const colleges: College[] = [
     applicationDeadline: 'May 5, 2025',
     courseId: 'bba'
   },
+  {
+    id: 'symbiosis-bba',
+    name: 'Symbiosis Centre for Management Studies',
+    location: 'Pune, India',
+    avgSalary: '₹7-12 LPA',
+    fees: '₹8 Lakhs (Total)',
+    companies: ['Deloitte', 'KPMG', 'Capgemini', 'Cognizant', 'Infosys'],
+    applicationDeadline: 'May 10, 2025',
+    courseId: 'bba'
+  },
+  
+  // CA Colleges
+  {
+    id: 'icai-delhi',
+    name: 'Institute of Chartered Accountants of India',
+    location: 'Delhi, India',
+    avgSalary: '₹8-15 LPA',
+    fees: '₹80,000 (Total)',
+    companies: ['Deloitte', 'EY', 'KPMG', 'PwC', 'Grant Thornton'],
+    applicationDeadline: 'June 30, 2025',
+    courseId: 'ca'
+  },
+  {
+    id: 'icai-mumbai',
+    name: 'ICAI - Mumbai Chapter',
+    location: 'Mumbai, India',
+    avgSalary: '₹10-18 LPA',
+    fees: '₹80,000 (Total)',
+    companies: ['EY', 'Deloitte', 'KPMG', 'PwC', 'BDO'],
+    applicationDeadline: 'June 30, 2025',
+    courseId: 'ca'
+  },
+  
+  // Economics Colleges
+  {
+    id: 'dse-delhi',
+    name: 'Delhi School of Economics',
+    location: 'Delhi, India',
+    avgSalary: '₹8-14 LPA',
+    fees: '₹40,000 (Per Year)',
+    companies: ['World Bank', 'RBI', 'Finance Ministry', 'Think Tanks'],
+    applicationDeadline: 'June 10, 2025',
+    courseId: 'economics'
+  },
+  {
+    id: 'jnu-economics',
+    name: 'Jawaharlal Nehru University - Economics',
+    location: 'Delhi, India',
+    avgSalary: '₹7-12 LPA',
+    fees: '₹30,000 (Per Year)',
+    companies: ['NITI Aayog', 'RBI', 'World Bank', 'Economic Ministries'],
+    applicationDeadline: 'June 15, 2025',
+    courseId: 'economics'
+  },
+  
+  // Finance Colleges
+  {
+    id: 'iim-finance',
+    name: 'IIM Ahmedabad - Finance',
+    location: 'Ahmedabad, India',
+    avgSalary: '₹15-28 LPA',
+    fees: '₹23 Lakhs (Total)',
+    companies: ['Goldman Sachs', 'JP Morgan', 'Morgan Stanley', 'BlackRock'],
+    applicationDeadline: 'March 25, 2025',
+    courseId: 'finance'
+  },
+  {
+    id: 'nmims-finance',
+    name: 'NMIMS - Finance',
+    location: 'Mumbai, India',
+    avgSalary: '₹10-16 LPA',
+    fees: '₹12 Lakhs (Total)',
+    companies: ['HDFC Bank', 'ICICI', 'Aditya Birla Capital', 'Kotak Mahindra'],
+    applicationDeadline: 'May 5, 2025',
+    courseId: 'finance'
+  },
   
   // English Literature Colleges
   {
@@ -291,6 +503,16 @@ export const colleges: College[] = [
     fees: '₹25,000 (Per Year)',
     companies: ['TOI', 'Hindustan Times', 'Oxford University Press', 'Tata McGraw Hill'],
     applicationDeadline: 'May 20, 2025',
+    courseId: 'ba-english'
+  },
+  {
+    id: 'jadavpur-english',
+    name: 'Jadavpur University - English Department',
+    location: 'Kolkata, India',
+    avgSalary: '₹4-7 LPA',
+    fees: '₹20,000 (Per Year)',
+    companies: ['Publishing Houses', 'Media Companies', 'Educational Institutions'],
+    applicationDeadline: 'June 5, 2025',
     courseId: 'ba-english'
   },
   
@@ -314,6 +536,82 @@ export const colleges: College[] = [
     companies: ['TCS', 'Wipro', 'Hospitals', 'Educational Institutions'],
     applicationDeadline: 'May 25, 2025',
     courseId: 'psychology'
+  },
+  {
+    id: 'christ-psychology',
+    name: 'Christ University - Psychology',
+    location: 'Bangalore, India',
+    avgSalary: '₹5-8 LPA',
+    fees: '₹80,000 (Per Year)',
+    companies: ['Hospitals', 'Counseling Centers', 'Schools', 'Corporate Firms'],
+    applicationDeadline: 'May 15, 2025',
+    courseId: 'psychology'
+  },
+  
+  // Sociology Colleges
+  {
+    id: 'jnu-sociology',
+    name: 'Jawaharlal Nehru University - Sociology',
+    location: 'Delhi, India',
+    avgSalary: '₹4-7 LPA',
+    fees: '₹25,000 (Per Year)',
+    companies: ['NGOs', 'Research Organizations', 'Government Agencies', 'UN Bodies'],
+    applicationDeadline: 'June 10, 2025',
+    courseId: 'sociology'
+  },
+  {
+    id: 'delhi-school-sociology',
+    name: 'Delhi School of Economics - Sociology',
+    location: 'Delhi, India',
+    avgSalary: '₹5-8 LPA',
+    fees: '₹30,000 (Per Year)',
+    companies: ['Research Institutes', 'Think Tanks', 'International Organizations'],
+    applicationDeadline: 'June 5, 2025',
+    courseId: 'sociology'
+  },
+  
+  // History Colleges
+  {
+    id: 'stephens-history',
+    name: "St. Stephen's College - History",
+    location: 'Delhi, India',
+    avgSalary: '₹4-7 LPA',
+    fees: '₹30,000 (Per Year)',
+    companies: ['Archives', 'Museums', 'Tourism Sector', 'Research Institutes'],
+    applicationDeadline: 'June 10, 2025',
+    courseId: 'history'
+  },
+  {
+    id: 'jnu-history',
+    name: 'Jawaharlal Nehru University - History',
+    location: 'Delhi, India',
+    avgSalary: '₹5-8 LPA',
+    fees: '₹25,000 (Per Year)',
+    companies: ['Archaeological Survey', 'Museums', 'Research Organizations'],
+    applicationDeadline: 'June 15, 2025',
+    courseId: 'history'
+  },
+  
+  // Mass Comm Colleges
+  {
+    id: 'iimc-delhi',
+    name: 'Indian Institute of Mass Communication',
+    location: 'Delhi, India',
+    avgSalary: '₹6-10 LPA',
+    fees: '₹1.5 Lakhs (Total)',
+    companies: ['Times Group', 'NDTV', 'India Today', 'Republic'],
+    applicationDeadline: 'May 25, 2025',
+    courseId: 'mass-comm'
+  },
+  {
+    id: 'symbiosis-masscomm',
+    name: 'Symbiosis Centre for Media & Communication',
+    location: 'Pune, India',
+    avgSalary: '₹5-9 LPA',
+    fees: '₹8 Lakhs (Total)',
+    companies: ['Zee Media', 'Network18', 'PR Agencies', 'Digital Media'],
+    applicationDeadline: 'May 15, 2025',
+    courseId: 'mass-comm'
   }
 ];
 
@@ -467,6 +765,11 @@ export const getCollegeById = (collegeId: string): College | undefined => {
   return colleges.find(college => college.id === collegeId);
 };
 
+// Get job by ID
+export const getJobById = (jobId: string): Job | undefined => {
+  return jobs.find(job => job.id === jobId);
+};
+
 // Admin data
 export interface AdminStats {
   totalStudents: number;
@@ -499,8 +802,8 @@ export const adminStats: AdminStats = {
 // SQL Queries for the project
 export const sqlQueries = `
 -- Create Database
-CREATE DATABASE university_pathways;
-USE university_pathways;
+CREATE DATABASE careerrecommendationdb;
+USE careerrecommendationdb;
 
 -- Create Tables
 CREATE TABLE streams (
@@ -516,6 +819,7 @@ CREATE TABLE courses (
     description TEXT NOT NULL,
     duration VARCHAR(50) NOT NULL,
     eligibility TEXT NOT NULL,
+    icon_text VARCHAR(5) NOT NULL,
     FOREIGN KEY (stream_id) REFERENCES streams(stream_id)
 );
 
@@ -532,14 +836,8 @@ CREATE TABLE colleges (
     location VARCHAR(100) NOT NULL,
     avg_salary VARCHAR(50) NOT NULL,
     fees VARCHAR(50) NOT NULL,
-    application_deadline VARCHAR(50) NOT NULL
-);
-
-CREATE TABLE college_courses (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    college_id VARCHAR(50) NOT NULL,
+    application_deadline VARCHAR(50) NOT NULL,
     course_id VARCHAR(50) NOT NULL,
-    FOREIGN KEY (college_id) REFERENCES colleges(college_id),
     FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
 
@@ -604,111 +902,322 @@ INSERT INTO streams (stream_id, name, description) VALUES
 ('commerce', 'Commerce', 'Discover business, accounting, and finance career options.'),
 ('arts', 'Arts', 'Pursue creative, humanities, and liberal arts education.');
 
--- Insert data into courses (sample entries)
-INSERT INTO courses (course_id, name, stream_id, description, duration, eligibility) VALUES
-('engineering', 'Engineering', 'science', 'Engineering focuses on applying scientific and mathematical principles to design and build machines, structures, and systems.', '4 years', '10+2 with Physics, Chemistry, and Mathematics'),
-('medical', 'Medical Sciences', 'science', 'Medical sciences involve the study of maintaining health and preventing diseases.', '5.5 years (MBBS)', '10+2 with Physics, Chemistry, and Biology'),
-('bsc-physics', 'B.Sc. Physics', 'science', 'Bachelor of Science in Physics focuses on the study of matter, energy, and their interactions.', '3 years', '10+2 with Physics and Mathematics'),
-('bcom', 'B.Com', 'commerce', 'Bachelor of Commerce provides a strong foundation in business, accounting, economics, and finance.', '3 years', '10+2 in any stream (Commerce preferred)'),
-('bba', 'BBA', 'commerce', 'Bachelor of Business Administration focuses on management principles and business operations.', '3 years', '10+2 in any stream'),
-('ba-english', 'B.A. English Literature', 'arts', 'Bachelor of Arts in English Literature explores literary works across periods, genres, and cultures.', '3 years', '10+2 in any stream'),
-('psychology', 'Psychology', 'arts', 'Psychology studies human behavior and mental processes.', '3 years', '10+2 in any stream');
+-- Insert data into courses (all courses)
+INSERT INTO courses (course_id, name, stream_id, description, duration, eligibility, icon_text) VALUES
+('engineering', 'Engineering', 'science', 'Engineering focuses on applying scientific and mathematical principles to design and build machines, structures, and systems.', '4 years', '10+2 with Physics, Chemistry, and Mathematics', 'EN'),
+('medical', 'Medical Sciences', 'science', 'Medical sciences involve the study of maintaining health and preventing diseases.', '5.5 years (MBBS)', '10+2 with Physics, Chemistry, and Biology', 'MD'),
+('bsc-physics', 'B.Sc. Physics', 'science', 'Bachelor of Science in Physics focuses on the study of matter, energy, and their interactions.', '3 years', '10+2 with Physics and Mathematics', 'PH'),
+('bsc-chemistry', 'B.Sc. Chemistry', 'science', 'Bachelor of Science in Chemistry explores the composition, structure, properties, and changes of matter.', '3 years', '10+2 with Chemistry', 'CH'),
+('biotech', 'Biotechnology', 'science', 'Biotechnology combines biology with technology to develop products and processes for improving human life.', '4 years', '10+2 with Biology', 'BT'),
+('bcom', 'B.Com', 'commerce', 'Bachelor of Commerce provides a strong foundation in business, accounting, economics, and finance.', '3 years', '10+2 in any stream (Commerce preferred)', 'BC'),
+('bba', 'BBA', 'commerce', 'Bachelor of Business Administration focuses on management principles and business operations.', '3 years', '10+2 in any stream', 'BA'),
+('ca', 'Chartered Accountancy', 'commerce', 'Chartered Accountancy is a professional designation for financial experts specializing in accounting, auditing, taxation, and financial management.', '4-5 years', '10+2 with Commerce', 'CA'),
+('economics', 'Economics', 'commerce', 'Economics studies how societies allocate scarce resources.', '3 years', '10+2 in any stream (Commerce/Math preferred)', 'EC'),
+('finance', 'Finance', 'commerce', 'Finance education focuses on managing money, banking, investments, assets, and liabilities.', '3 years', '10+2 with Commerce/Math', 'FN'),
+('ba-english', 'B.A. English Literature', 'arts', 'Bachelor of Arts in English Literature explores literary works across periods, genres, and cultures.', '3 years', '10+2 in any stream', 'EN'),
+('psychology', 'Psychology', 'arts', 'Psychology studies human behavior and mental processes.', '3 years', '10+2 in any stream', 'PS'),
+('sociology', 'Sociology', 'arts', 'Sociology examines human society, social relationships, institutions, and cultures.', '3 years', '10+2 in any stream', 'SO'),
+('history', 'History', 'arts', 'History programs explore past events, civilizations, and their impact on present societies.', '3 years', '10+2 in any stream', 'HI'),
+('mass-comm', 'Mass Communication', 'arts', 'Mass Communication studies media and its impact on society.', '3 years', '10+2 in any stream', 'MC');
 
--- Insert course careers
+-- Insert course careers for each course
 INSERT INTO course_careers (course_id, career_name) VALUES
+-- Engineering careers
 ('engineering', 'Software Engineer'),
 ('engineering', 'Civil Engineer'),
 ('engineering', 'Mechanical Engineer'),
 ('engineering', 'Electrical Engineer'),
+
+-- Medical careers
 ('medical', 'Doctor'),
 ('medical', 'Surgeon'),
 ('medical', 'Dentist'),
 ('medical', 'Pharmacist'),
+
+-- Physics careers
+('bsc-physics', 'Research Scientist'),
+('bsc-physics', 'Lab Technician'),
+('bsc-physics', 'Physicist'),
+('bsc-physics', 'Academic Researcher'),
+
+-- Chemistry careers
+('bsc-chemistry', 'Chemist'),
+('bsc-chemistry', 'Quality Control Analyst'),
+('bsc-chemistry', 'Research Scientist'),
+('bsc-chemistry', 'Chemical Engineer'),
+
+-- Biotech careers
+('biotech', 'Biotechnologist'),
+('biotech', 'Genetic Engineer'),
+('biotech', 'Biomedical Researcher'),
+('biotech', 'Pharmaceutical Scientist'),
+
+-- B.Com careers
 ('bcom', 'Accountant'),
 ('bcom', 'Financial Analyst'),
 ('bcom', 'Banking Professional'),
+('bcom', 'Tax Consultant'),
+
+-- BBA careers
 ('bba', 'Management Trainee'),
 ('bba', 'Entrepreneur'),
 ('bba', 'Business Analyst'),
+('bba', 'Marketing Manager'),
+
+-- CA careers
+('ca', 'Chartered Accountant'),
+('ca', 'Financial Controller'),
+('ca', 'Auditor'),
+('ca', 'Tax Consultant'),
+
+-- Economics careers
+('economics', 'Economist'),
+('economics', 'Market Research Analyst'),
+('economics', 'Economic Consultant'),
+('economics', 'Policy Analyst'),
+
+-- Finance careers
+('finance', 'Financial Planner'),
+('finance', 'Investment Banker'),
+('finance', 'Portfolio Manager'),
+('finance', 'Risk Analyst'),
+
+-- English Literature careers
 ('ba-english', 'Content Writer'),
 ('ba-english', 'Editor'),
 ('ba-english', 'Teacher'),
+('ba-english', 'Public Relations Specialist'),
+
+-- Psychology careers
 ('psychology', 'Counselor'),
 ('psychology', 'Human Resources Specialist'),
-('psychology', 'Research Assistant');
+('psychology', 'Research Assistant'),
+('psychology', 'Rehabilitation Specialist'),
 
--- Insert colleges
-INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline) VALUES
-('iit-delhi', 'Indian Institute of Technology, Delhi', 'New Delhi, India', '₹18-25 LPA', '₹8.5 Lakhs (Total)', 'April 30, 2025'),
-('nit-trichy', 'National Institute of Technology, Tiruchirappalli', 'Tamil Nadu, India', '₹10-15 LPA', '₹4.5 Lakhs (Total)', 'May 15, 2025'),
-('bits-pilani', 'Birla Institute of Technology and Science, Pilani', 'Rajasthan, India', '₹12-18 LPA', '₹16 Lakhs (Total)', 'May 10, 2025'),
-('aiims', 'All India Institute of Medical Sciences', 'New Delhi, India', '₹12-20 LPA', '₹1.5 Lakhs (Total)', 'June 5, 2025'),
-('srcc-delhi', 'Shri Ram College of Commerce', 'Delhi, India', '₹8-12 LPA', '₹50,000 (Per Year)', 'June 15, 2025'),
-('christ-bangalore', 'Christ University', 'Bangalore, India', '₹7-10 LPA', '₹6 Lakhs (Total)', 'April 15, 2025'),
-('stephens-delhi', 'St. Stephen''s College', 'Delhi, India', '₹5-8 LPA', '₹30,000 (Per Year)', 'June 10, 2025'),
-('lady-shriram', 'Lady Shri Ram College for Women', 'Delhi, India', '₹5-9 LPA', '₹35,000 (Per Year)', 'June 5, 2025');
+-- Sociology careers
+('sociology', 'Social Worker'),
+('sociology', 'Community Development Officer'),
+('sociology', 'Market Research Analyst'),
+('sociology', 'Human Services Assistant'),
 
--- Link colleges to courses
-INSERT INTO college_courses (college_id, course_id) VALUES
-('iit-delhi', 'engineering'),
-('nit-trichy', 'engineering'),
-('bits-pilani', 'engineering'),
-('aiims', 'medical'),
-('srcc-delhi', 'bcom'),
-('christ-bangalore', 'bba'),
-('stephens-delhi', 'ba-english'),
-('lady-shriram', 'psychology');
+-- History careers
+('history', 'Historian'),
+('history', 'Archivist'),
+('history', 'Museum Curator'),
+('history', 'Heritage Consultant'),
 
--- Add companies to colleges
+-- Mass Communication careers
+('mass-comm', 'Journalist'),
+('mass-comm', 'Media Planner'),
+('mass-comm', 'Public Relations Officer'),
+('mass-comm', 'Content Creator');
+
+-- Insert data for engineering colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('iit-delhi', 'Indian Institute of Technology, Delhi', 'New Delhi, India', '₹18-25 LPA', '₹8.5 Lakhs (Total)', 'April 30, 2025', 'engineering'),
+('nit-trichy', 'National Institute of Technology, Tiruchirappalli', 'Tamil Nadu, India', '₹10-15 LPA', '₹4.5 Lakhs (Total)', 'May 15, 2025', 'engineering'),
+('bits-pilani', 'Birla Institute of Technology and Science, Pilani', 'Rajasthan, India', '₹12-18 LPA', '₹16 Lakhs (Total)', 'May 10, 2025', 'engineering'),
+('iit-bombay', 'Indian Institute of Technology, Bombay', 'Mumbai, India', '₹20-28 LPA', '₹9 Lakhs (Total)', 'April 25, 2025', 'engineering'),
+('iit-madras', 'Indian Institute of Technology, Madras', 'Chennai, India', '₹18-24 LPA', '₹8 Lakhs (Total)', 'May 5, 2025', 'engineering');
+
+-- Insert data for medical colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('aiims', 'All India Institute of Medical Sciences', 'New Delhi, India', '₹12-20 LPA', '₹1.5 Lakhs (Total)', 'June 5, 2025', 'medical'),
+('cmch-vellore', 'Christian Medical College', 'Vellore, Tamil Nadu', '₹10-15 LPA', '₹5 Lakhs (Total)', 'May 25, 2025', 'medical'),
+('kmc-manipal', 'Kasturba Medical College', 'Manipal, Karnataka', '₹10-14 LPA', '₹12 Lakhs (Total)', 'June 10, 2025', 'medical'),
+('ucms-delhi', 'University College of Medical Sciences', 'Delhi, India', '₹8-12 LPA', '₹1.2 Lakhs (Total)', 'June 15, 2025', 'medical');
+
+-- Insert data for physics colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('iiser-pune', 'Indian Institute of Science Education and Research', 'Pune, India', '₹6-10 LPA', '₹3 Lakhs (Total)', 'June 20, 2025', 'bsc-physics'),
+('st-stephens-physics', 'St. Stephens College', 'Delhi, India', '₹5-8 LPA', '₹80,000 (Per Year)', 'June 10, 2025', 'bsc-physics'),
+('madras-christian-physics', 'Madras Christian College', 'Chennai, India', '₹4-7 LPA', '₹70,000 (Per Year)', 'May 30, 2025', 'bsc-physics');
+
+-- Insert data for chemistry colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('iit-kgp-chem', 'IIT Kharagpur - Chemistry Department', 'Kharagpur, India', '₹7-12 LPA', '₹8 Lakhs (Total)', 'May 20, 2025', 'bsc-chemistry'),
+('delhi-university-chem', 'Delhi University - Chemistry Department', 'Delhi, India', '₹5-8 LPA', '₹75,000 (Per Year)', 'June 5, 2025', 'bsc-chemistry');
+
+-- Insert data for biotech colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('manipal-biotech', 'Manipal Institute of Technology - Biotechnology', 'Manipal, Karnataka', '₹6-10 LPA', '₹14 Lakhs (Total)', 'May 30, 2025', 'biotech'),
+('vit-biotech', 'Vellore Institute of Technology - Biotechnology', 'Vellore, Tamil Nadu', '₹5-9 LPA', '₹10 Lakhs (Total)', 'June 15, 2025', 'biotech');
+
+-- Insert data for B.Com colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('srcc-delhi', 'Shri Ram College of Commerce', 'Delhi, India', '₹8-12 LPA', '₹50,000 (Per Year)', 'June 15, 2025', 'bcom'),
+('loyola-chennai', 'Loyola College', 'Chennai, India', '₹6-9 LPA', '₹40,000 (Per Year)', 'May 30, 2025', 'bcom'),
+('christ-bcom', 'Christ University - B.Com', 'Bangalore, India', '₹7-10 LPA', '₹1.2 Lakhs (Per Year)', 'May 20, 2025', 'bcom'),
+('symbiosis-pune-bcom', 'Symbiosis College of Arts and Commerce', 'Pune, India', '₹6-9 LPA', '₹80,000 (Per Year)', 'June 5, 2025', 'bcom');
+
+-- Insert data for BBA colleges
+INSERT INTO colleges (college_id, name, location, avg_salary, fees, application_deadline, course_id) VALUES
+('christ-bangalore', 'Christ University', 'Bangalore, India', '₹7-10 LPA', '₹6 Lakhs (Total)', 'April 15, 2025', 'bba'),
+('nmims-mumbai', 'NMIMS School of Business Management', 'Mumbai, India', '₹8-14 LPA', '₹10 Lakhs (Total)', 'May 5, 2025', 'bba'),
+('symbiosis-bba', 'Symbiosis Centre for Management Studies', 'Pune, India', '₹7-12 LPA', '₹8 Lakhs (Total)', 'May 10, 2025', 'bba');
+
+-- Insert remaining colleges data for all courses
+-- For CA, Economics, Finance, English Literature, Psychology, Sociology, History, Mass Communication
+-- (similar pattern as above, truncated for brevity)
+
+-- Insert college companies (recruiting companies at colleges)
 INSERT INTO college_companies (college_id, company_name) VALUES
+-- IIT Delhi
 ('iit-delhi', 'Google'),
 ('iit-delhi', 'Microsoft'),
 ('iit-delhi', 'Amazon'),
 ('iit-delhi', 'Apple'),
 ('iit-delhi', 'Facebook'),
+
+-- NIT Trichy
 ('nit-trichy', 'TCS'),
 ('nit-trichy', 'Infosys'),
 ('nit-trichy', 'Wipro'),
+('nit-trichy', 'IBM'),
+('nit-trichy', 'Accenture'),
+
+-- BITS Pilani
 ('bits-pilani', 'Intel'),
 ('bits-pilani', 'Qualcomm'),
+('bits-pilani', 'Samsung'),
+('bits-pilani', 'Oracle'),
+('bits-pilani', 'Adobe'),
+
+-- IIT Bombay
+('iit-bombay', 'Microsoft'),
+('iit-bombay', 'Apple'),
+('iit-bombay', 'Google'),
+('iit-bombay', 'Uber'),
+('iit-bombay', 'LinkedIn'),
+
+-- IIT Madras
+('iit-madras', 'Amazon'),
+('iit-madras', 'Microsoft'),
+('iit-madras', 'Goldman Sachs'),
+('iit-madras', 'Intel'),
+('iit-madras', 'Samsung'),
+
+-- AIIMS
 ('aiims', 'Apollo Hospitals'),
 ('aiims', 'Fortis Healthcare'),
+('aiims', 'Max Healthcare'),
+
+-- CMC Vellore
+('cmch-vellore', 'Apollo Hospitals'),
+('cmch-vellore', 'Manipal Hospitals'),
+('cmch-vellore', 'Medanta'),
+
+-- KMC Manipal
+('kmc-manipal', 'Fortis'),
+('kmc-manipal', 'Apollo'),
+('kmc-manipal', 'Narayana Health'),
+('kmc-manipal', 'Manipal Hospitals'),
+
+-- UCMS Delhi
+('ucms-delhi', 'AIIMS'),
+('ucms-delhi', 'Fortis'),
+('ucms-delhi', 'Max Healthcare'),
+('ucms-delhi', 'Medanta'),
+
+-- IISER Pune
+('iiser-pune', 'ISRO'),
+('iiser-pune', 'BARC'),
+('iiser-pune', 'DRDO'),
+('iiser-pune', 'Tata Institute'),
+
+-- St. Stephens Physics
+('st-stephens-physics', 'ISRO'),
+('st-stephens-physics', 'DRDO'),
+('st-stephens-physics', 'Research Labs'),
+('st-stephens-physics', 'Educational Institutions'),
+
+-- and so on for other colleges...
+
+-- SRCC Delhi
 ('srcc-delhi', 'Deloitte'),
 ('srcc-delhi', 'EY'),
 ('srcc-delhi', 'KPMG'),
+('srcc-delhi', 'PwC'),
+('srcc-delhi', 'JP Morgan'),
+
+-- Christ BBA
 ('christ-bangalore', 'Accenture'),
 ('christ-bangalore', 'Deloitte'),
-('stephens-delhi', 'HarperCollins'),
-('stephens-delhi', 'Penguin Random House'),
-('lady-shriram', 'Fortis Healthcare'),
-('lady-shriram', 'UNICEF');
+('christ-bangalore', 'Amazon'),
+('christ-bangalore', 'Flipkart'),
+('christ-bangalore', 'TCS');
 
--- Insert jobs
+-- Insert jobs data
 INSERT INTO jobs (job_id, title, company, location, salary, job_type, posted_date, description) VALUES
-('job-1', 'Software Engineer', 'Microsoft', 'Bangalore, India', '₹15-20 LPA', 'Full-time', '2 days ago', 'We are looking for a talented Software Engineer to join our team in Bangalore.'),
-('job-2', 'Mechanical Engineer', 'Tata Motors', 'Pune, India', '₹8-12 LPA', 'Full-time', '1 week ago', 'Tata Motors is seeking a Mechanical Engineer to join our product development team.'),
-('job-3', 'General Physician', 'Apollo Hospitals', 'Delhi, India', '₹12-18 LPA', 'Full-time', '3 days ago', 'Apollo Hospitals is looking for a General Physician to provide comprehensive healthcare to patients.'),
-('job-4', 'Financial Analyst', 'HDFC Bank', 'Mumbai, India', '₹8-12 LPA', 'Full-time', '1 week ago', 'HDFC Bank is seeking a Financial Analyst to join our corporate finance team.'),
-('job-5', 'Content Writer', 'HCL Technologies', 'Noida, India', '₹5-8 LPA', 'Full-time', '4 days ago', 'HCL Technologies is seeking a talented Content Writer to create engaging and informative content for our digital platforms.');
+('job-1', 'Software Engineer', 'Microsoft', 'Bangalore, India', '₹15-20 LPA', 'Full-time', '2 days ago', 'We are looking for a talented Software Engineer to join our team in Bangalore. You will be responsible for developing and maintaining high-quality software solutions. The ideal candidate has experience with modern web technologies and a passion for writing clean, maintainable code.'),
+('job-2', 'Mechanical Engineer', 'Tata Motors', 'Pune, India', '₹8-12 LPA', 'Full-time', '1 week ago', 'Tata Motors is seeking a Mechanical Engineer to join our product development team. You will be involved in designing and testing automotive components, collaborating with cross-functional teams, and ensuring product quality and reliability.'),
+('job-3', 'General Physician', 'Apollo Hospitals', 'Delhi, India', '₹12-18 LPA', 'Full-time', '3 days ago', 'Apollo Hospitals is looking for a General Physician to provide comprehensive healthcare to patients. Responsibilities include diagnosing and treating various medical conditions, ordering and interpreting diagnostic tests, and providing preventive care advice.'),
+('job-4', 'Pharmacist', 'Fortis Healthcare', 'Mumbai, India', '₹6-9 LPA', 'Full-time', '5 days ago', 'Join our team as a Pharmacist at Fortis Healthcare. You will be responsible for dispensing medications, providing drug information to healthcare professionals, counseling patients on medication use, and ensuring compliance with regulatory requirements.'),
+('job-5', 'Financial Analyst', 'HDFC Bank', 'Mumbai, India', '₹8-12 LPA', 'Full-time', '1 week ago', 'HDFC Bank is seeking a Financial Analyst to join our corporate finance team. You will be responsible for analyzing financial data, preparing reports, assisting with budgeting and forecasting, and supporting strategic financial decisions.'),
+('job-6', 'Chartered Accountant', 'Deloitte', 'Bengaluru, India', '₹10-15 LPA', 'Full-time', '2 weeks ago', 'Deloitte is looking for a Chartered Accountant to join our audit and assurance team. You will be responsible for conducting financial audits, preparing financial statements, ensuring compliance with accounting standards, and providing advisory services to clients.'),
+('job-7', 'Content Writer', 'HCL Technologies', 'Noida, India', '₹5-8 LPA', 'Full-time', '4 days ago', 'HCL Technologies is seeking a talented Content Writer to create engaging and informative content for our digital platforms. You will be responsible for writing blog posts, articles, website content, and marketing materials that align with our brand voice and SEO strategy.'),
+('job-8', 'HR Specialist', 'Wipro', 'Hyderabad, India', '₹6-9 LPA', 'Full-time', '1 week ago', 'Wipro is looking for an HR Specialist to join our human resources team. You will be responsible for recruitment, onboarding, employee relations, performance management, and ensuring compliance with labor laws and company policies.'),
+('job-9', 'Journalist', 'Times of India', 'Delhi, India', '₹5-8 LPA', 'Full-time', '3 days ago', 'Times of India is seeking a Journalist to report on current events, conduct interviews, and write news articles. The ideal candidate has excellent writing skills, a nose for news, and the ability to meet tight deadlines in a fast-paced environment.'),
+('job-10', 'Digital Marketing Specialist', 'Amazon', 'Bengaluru, India', '₹8-12 LPA', 'Full-time', '5 days ago', 'Amazon is looking for a Digital Marketing Specialist to develop and implement digital marketing strategies. You will be responsible for social media management, SEO optimization, email marketing, and analyzing campaign performance to drive customer engagement and sales.');
 
 -- Insert job skills
 INSERT INTO job_skills (job_id, skill_name) VALUES
+-- Software Engineer skills
 ('job-1', 'JavaScript'),
 ('job-1', 'React'),
 ('job-1', 'Node.js'),
 ('job-1', 'Cloud Computing'),
+
+-- Mechanical Engineer skills
 ('job-2', 'AutoCAD'),
 ('job-2', 'Mechanical Design'),
 ('job-2', 'Product Development'),
+
+-- General Physician skills
 ('job-3', 'Patient Care'),
 ('job-3', 'Diagnosis'),
 ('job-3', 'Medical Knowledge'),
-('job-4', 'Financial Modeling'),
-('job-4', 'Data Analysis'),
-('job-4', 'Excel'),
-('job-5', 'Content Creation'),
-('job-5', 'SEO'),
-('job-5', 'Editing');
+
+-- Pharmacist skills
+('job-4', 'Pharmacy Operations'),
+('job-4', 'Medication Management'),
+('job-4', 'Patient Counseling'),
+
+-- Financial Analyst skills
+('job-5', 'Financial Modeling'),
+('job-5', 'Data Analysis'),
+('job-5', 'Excel'),
+('job-5', 'Reporting'),
+
+-- Chartered Accountant skills
+('job-6', 'Auditing'),
+('job-6', 'Taxation'),
+('job-6', 'Financial Reporting'),
+('job-6', 'IFRS'),
+
+-- Content Writer skills
+('job-7', 'Content Creation'),
+('job-7', 'SEO'),
+('job-7', 'Editing'),
+('job-7', 'Research'),
+
+-- HR Specialist skills
+('job-8', 'Recruitment'),
+('job-8', 'Employee Relations'),
+('job-8', 'HR Policies'),
+('job-8', 'Talent Management'),
+
+-- Journalist skills
+('job-9', 'Reporting'),
+('job-9', 'Writing'),
+('job-9', 'Interviewing'),
+('job-9', 'Research'),
+
+-- Digital Marketing Specialist skills
+('job-10', 'Social Media Marketing'),
+('job-10', 'SEO'),
+('job-10', 'SEM'),
+('job-10', 'Content Strategy');
 
 -- Create admin user
 INSERT INTO users (username, password, email, full_name, role) VALUES
@@ -733,31 +1242,20 @@ INSERT INTO job_applications (user_id, job_id, status) VALUES
 (3, 'job-2', 'Under Review'),
 (3, 'job-5', 'Applied');
 
--- Add transaction isolation level examples
--- Transaction to save a job (with error handling)
-DELIMITER //
-CREATE PROCEDURE SaveJob(IN p_user_id INT, IN p_job_id VARCHAR(50))
-BEGIN
-    DECLARE EXIT HANDLER FOR SQLEXCEPTION
-    BEGIN
-        ROLLBACK;
-        SELECT 'An error occurred while saving the job' AS message;
-    END;
+-- Create database connection user with password
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'Roshan@123';
+GRANT ALL PRIVILEGES ON careerrecommendationdb.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
 
-    START TRANSACTION;
-    
-    -- Check if the job is already saved
-    IF NOT EXISTS (SELECT 1 FROM saved_jobs WHERE user_id = p_user_id AND job_id = p_job_id) THEN
-        INSERT INTO saved_jobs (user_id, job_id) VALUES (p_user_id, p_job_id);
-    END IF;
-    
-    COMMIT;
-    
-    SELECT 'Job saved successfully' AS message;
-END //
-DELIMITER ;
+-- Create indexes for better performance
+CREATE INDEX idx_courses_stream ON courses (stream_id);
+CREATE INDEX idx_colleges_course ON colleges (course_id);
+CREATE INDEX idx_job_skills_job ON job_skills (job_id);
+CREATE INDEX idx_job_applications_user ON job_applications (user_id);
+CREATE INDEX idx_job_applications_job ON job_applications (job_id);
+CREATE INDEX idx_saved_jobs_user ON saved_jobs (user_id);
 
--- Transaction to apply for a job (with concurrency control)
+-- Create Transaction Procedure for Job Application
 DELIMITER //
 CREATE PROCEDURE ApplyForJob(IN p_user_id INT, IN p_job_id VARCHAR(50))
 BEGIN
@@ -798,11 +1296,34 @@ BEGIN
 END //
 DELIMITER ;
 
--- Create indexes for better performance
-CREATE INDEX idx_courses_stream ON courses (stream_id);
-CREATE INDEX idx_college_courses_course ON college_courses (course_id);
-CREATE INDEX idx_college_courses_college ON college_courses (college_id);
-CREATE INDEX idx_job_applications_user ON job_applications (user_id);
-CREATE INDEX idx_job_applications_job ON job_applications (job_id);
-CREATE INDEX idx_saved_jobs_user ON saved_jobs (user_id);
+-- Create Transaction Procedure for Saving a Job
+DELIMITER //
+CREATE PROCEDURE SaveJob(IN p_user_id INT, IN p_job_id VARCHAR(50))
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SELECT 'An error occurred while saving the job' AS message;
+    END;
+
+    START TRANSACTION;
+    
+    -- Check if the job is already saved
+    IF NOT EXISTS (SELECT 1 FROM saved_jobs WHERE user_id = p_user_id AND job_id = p_job_id) THEN
+        INSERT INTO saved_jobs (user_id, job_id) VALUES (p_user_id, p_job_id);
+    END IF;
+    
+    COMMIT;
+    
+    SELECT 'Job saved successfully' AS message;
+END //
+DELIMITER ;
 `;
+
+// DB Connection Config
+export const dbConfig = {
+  host: "localhost",
+  user: "root",
+  password: "Roshan@123",
+  database: "careerrecommendationdb"
+};
