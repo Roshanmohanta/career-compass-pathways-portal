@@ -780,17 +780,23 @@ export const getJobById = (jobId: string): Job | undefined => {
 
 // Mock admin stats for dashboard
 export const adminStats = {
+  totalStudents: 5200,
   totalCourses: allCourses.length,
   totalColleges: colleges.length,
   totalJobs: jobs.length,
   newApplications: 24,
   activeUsers: 457,
   monthlyVisits: 5823,
+  popularStreams: [
+    { name: 'Science', count: 2450 },
+    { name: 'Commerce', count: 1850 },
+    { name: 'Arts', count: 900 }
+  ],
   popularCourses: [
-    { name: 'Engineering', students: 1245 },
-    { name: 'Medical Sciences', students: 987 },
-    { name: 'B.Com', students: 876 },
-    { name: 'BBA', students: 764 },
-    { name: 'Psychology', students: 543 }
+    { name: 'Engineering', count: 1245 },
+    { name: 'Medical Sciences', count: 987 },
+    { name: 'B.Com', count: 876 },
+    { name: 'BBA', count: 764 },
+    { name: 'Psychology', count: 543 }
   ]
 };

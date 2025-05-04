@@ -38,9 +38,15 @@ export const CollegeTable = ({
           LEFT JOIN college_companies cc ON c.college_id = cc.college_id
           GROUP BY c.college_id
         `;
-        const results: any[] = await executeQuery(query);
+        const results = await executeQuery(query);
         
-        const collegesData = results.map(row => ({
+        if (!Array.isArray(results)) {
+          console.error("Expected array result from query");
+          setColleges([]);
+          return;
+        }
+        
+        const collegesData = results.map((row: any) => ({
           id: row.college_id,
           name: row.name,
           location: row.location,

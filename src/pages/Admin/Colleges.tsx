@@ -2,7 +2,6 @@
 import { useState } from "react";
 import AdminSidebar from "@/components/admin/AdminSidebar";
 import AdminHeader from "@/components/admin/AdminHeader";
-import { colleges } from "@/lib/data";
 import { College } from "@/components/CollegeCard";
 import { toast } from "sonner";
 import { CollegeTable } from "@/components/admin/colleges/CollegeTable";
@@ -10,18 +9,18 @@ import { AddCollegeDialog } from "@/components/admin/colleges/AddCollegeDialog";
 import { CollegeSearch } from "@/components/admin/colleges/CollegeSearch";
 
 const AdminColleges = () => {
-  const [collegesList, setCollegesList] = useState<College[]>(colleges);
   const [searchTerm, setSearchTerm] = useState("");
   
-  const handleDeleteCollege = (id: string) => {
-    setCollegesList(collegesList.filter(college => college.id !== id));
-    toast.success("College deleted successfully");
+  const handleEditCollege = (college: College) => {
+    // This will be handled by the EditCollegeDialog component
+    console.log("Editing college:", college);
   };
   
-  const filteredColleges = collegesList.filter(college => {
-    return college.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-           college.location.toLowerCase().includes(searchTerm.toLowerCase());
-  });
+  const handleDeleteCollege = (id: string) => {
+    // Here we would typically delete from the database
+    // For now, just show a success toast
+    toast.success("College deleted successfully");
+  };
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -42,7 +41,8 @@ const AdminColleges = () => {
           
           {/* Colleges Table */}
           <CollegeTable 
-            colleges={filteredColleges} 
+            searchTerm={searchTerm} 
+            onEditCollege={handleEditCollege} 
             onDeleteCollege={handleDeleteCollege} 
           />
         </main>
